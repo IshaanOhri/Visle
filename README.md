@@ -54,10 +54,7 @@ The next challenge was to make use of web sockets extensively in variety of tech
  - Retrofit Library in Android to make API Calls
 
 
-# What's next with Visle
-We want Visle to be easy to use and want it integrate in classrooms, online classrooms and other E-learning tool, so that it could enhance the overall learning experience in classrooms/remote education and thus helps young curious minds develop their powerful visual memory, as our moto is 
-                
-                            "when you learn, you visualize, when you visualize, you remember"
+
 
 
 
@@ -98,3 +95,9 @@ We want Visle to be easy to use and want it integrate in classrooms, online clas
 <p align="center">
  <img src = "https://raw.githubusercontent.com/IshaanOhri/Visle/master/Assets/img/techstack.svg">
 </p>
+
+
+# What's next with Visle
+We want Visle to be easy to use and want it integrate in classrooms, online classrooms and other E-learning tool, so that it could enhance the overall learning experience in classrooms/remote education and thus helps young curious minds develop their powerful visual memory, as our moto is 
+                
+                            "when you learn, you visualize, when you visualize, you remember"

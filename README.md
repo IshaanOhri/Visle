@@ -110,7 +110,7 @@ The next challenge was to make use of web sockets extensively in variety of tech
 <br>
 
 <p align="center">
- <img src = "https://raw.githubusercontent.com/IshaanOhri/Visle/master/Assets/img/techstack.svg">
+ <img src = "https://raw.githubusercontent.com/IshaanOhri/Visle/master/Assets/img/techstack.png">
 </p>
 
 <br>

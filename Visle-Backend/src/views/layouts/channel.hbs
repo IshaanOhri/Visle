@@ -152,7 +152,7 @@
 
 		document.getElementById('participants-count').innerHTML = `Participants (${channel.members.count})`;
 
-		fetch(`http://localhost:3000/channel/remove?channelID={{sessionID}}&participantID=${member.id}`)
+		fetch(`https://visle.ml/channel/remove?channelID={{sessionID}}&participantID=${member.id}`)
 			.then(function (response) {
 				return response.text();
 			}).then(function (html) {

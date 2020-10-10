@@ -11,9 +11,10 @@ Researchers say visual memory is 60,000X times powerful than text/auditory memor
 
 # What is Visle?
 ```
-Mr Lal is a primary class English teacher. One day he was teaching his students about different kind of birds. He started with the king of birds, Kingfisher🦆 and the conversation went like
+Mr Lal is a primary class English teacher. One day he was teaching his students about different kind of birds. 
+He started with the king of birds, Kingfisher🦆 and the conversation went like
 
-Mr lal: "Oncle lived a beautiful kingfisher on a big green tree..."
+Mr Lal: "Oncle lived a beautiful kingfisher on a big green tree..."
 
 Hearing this a lot of students raised questions and asked
 

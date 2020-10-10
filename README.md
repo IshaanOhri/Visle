@@ -31,7 +31,7 @@ Hearing these questions, Mr Lal decided to take help of our visual assistant Vis
 Visle, formed by the words visual-learning, is a tech-based learning tool that converts teacher's speech into Clipart pictures in real-time to provide young minds an enhanced and graphic rich learning experience. Visle does this with help of GANs(Generative adversarial network).
 
 <br>
-<h2 align="center">How we build it</h2>
+<h2 align="center">How we build it?</h2>
 <br>
 
 Our project has three main elements
@@ -61,19 +61,19 @@ The next challenge was to make use of web sockets extensively in variety of tech
 <br>
 
  - Understanding and using GANs to generate Images.
- - Creating a REST API for the Neural Network using flask
- - Understanding and using channels,sockets for our application
- - Building an android and web app with clean,simple and beautiful UI.
+ - Achieving an accuracy of **87.621%** with our generative neural network.
+ - Understanding the use channels, websockets for building a real-time applications
+ - Using publish-subscrible system design for asynchronous messaging b/w various services
+ - serverless archicture for system maintanence and scaling.
 
 <br>
 <h2 align="center">What we learned</h2>
 <br>
 
- - GANs(Generative adversarial Network)
- - Dockerizing a Flask API and deploying the docker image
+ - GANs(Generative adversarial Network) and training it with images
+ - fully automated dockerized deployment with CI/CD pipeline build over github actions
  - Understanding sockets and publish subscribe models to push data
- - Typescript and using typescript with node for backend 
- - Retrofit Library in Android to make API Calls
+ - Using RabbitMQ as message queue
 
 <p align="center">
  <img src = "https://raw.githubusercontent.com/IshaanOhri/Visle/master/Assets/img/remote.png">

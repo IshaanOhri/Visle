@@ -1,0 +1,8 @@
+Flask
+python-dateutil
+easydict
+scikit-image
+azure-storage-blob==0.37.1
+applicationinsights
+libmc
+Werkzeug==0.16.0

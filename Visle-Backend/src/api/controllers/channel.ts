@@ -114,7 +114,7 @@ const reciteStory = async (req: Request, res: Response) => {
 
 	const urls: string[] = [];
 
-	fetch('http://52.146.69.140:5000/generateMultipleImages', {
+	fetch('http://40.64.77.135:5000/generateMultipleImages', {
 		method: 'post',
 		body: JSON.stringify(body),
 		headers: { 'Content-Type': 'application/json' }

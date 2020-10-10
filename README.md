@@ -60,4 +60,41 @@ We want Visle to be easy to use and want it integrate in classrooms, online clas
                             "when you learn, you visualize, when you visualize, you remember"
 
 
+
+<p align="center">
+ <img src = "/Assets/img/remote.png">
+</p>
+<br>
+<br>
+<p align="center">
+ <img src = "/Assets/img/classroom.png">
+</p>
+
                 
+<br>
+<h2 align="center">Neural Network Architecture</h2>
+
+<p align="center">
+ <a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Xu_AttnGAN_Fine-Grained_Text_CVPR_2018_paper.pdf">Reference</a>
+</p>
+<br>
+
+<p align="center">
+ <img src = "/Assets/img/GAN.png">
+</p>
+
+<br>
+<h2 align="center">How it works?</h2>
+<br>
+
+<p align="center">
+ <img src = "/Assets/img/workflow.svg">
+</p>
+
+<br>
+<h2 align="center">Tech Stacks</h2>
+<br>
+
+<p align="center">
+ <img src = "/Assets/img/techstack.svg">
+</p>

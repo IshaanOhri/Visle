@@ -7,12 +7,11 @@
 </p>
 
 # Inspiration
-Researchers say visual memory is 60,000X times powerful than text/auditory memory and something which is grasped visually remains in our mind for very long time. Our current education system has become outdated and methodological, where teachers prepare their non-interactive lessons and present them in a lecturing and boring fashion. Inspired by the power of visual learning we wanted to create a tool that could converts teacher's lessons into easy to grasp Cliparts as the teacher speaks dynamically, to provide most immersive, engaging and visually enhanced learning experience to students. Hence, we created Visle, a visual learning tool.
+Researchers say visual memory is 60,000x times powerful than text/auditory memory and something which is grasped visually remains in our mind for very long time. Our current education system has become outdated and methodological, where teachers prepare their non-interactive lessons and present them in a lecturing and boring fashion. Inspired by the power of visual learning we wanted to create a tool that could converts teacher's lessons into easy to grasp Cliparts as the teacher speaks dynamically, to provide most immersive, engaging and visually enhanced learning experience to students. Hence, we created Visle, a visual learning tool.
 
 # What is Visle?
 ```
-Mr Lal is a primary class English teacher. One day he was teaching his students about different kind of birds. 
-He started with the king of birds, Kingfisher🦆 and the conversation went like
+Mr Lal is a primary class English teacher. One day he was teaching his students about different kind of birds. He started with the king of birds, Kingfisher🦆 and the conversation went like
 
 Mr Lal: "Oncle lived a beautiful kingfisher on a big green tree..."
 
@@ -105,4 +104,6 @@ The next challenge was to make use of web sockets extensively in variety of tech
 # What's next with Visle
 We want Visle to be easy to use and want it integrate in classrooms, online classrooms and other E-learning tool, so that it could enhance the overall learning experience in classrooms/remote education and thus helps young curious minds develop their powerful visual memory, as our moto is 
                 
-                            "when you learn, you visualize, when you visualize, you remember"
+<p align="center">
+ <img height="100" src = "https://raw.githubusercontent.com/IshaanOhri/Visle/master/Assets/img/Quote.png">
+</p>

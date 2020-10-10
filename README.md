@@ -1,6 +1,10 @@
-# Visle - an interactive visual learning tool
+<p align="center">
+ <img height="80" src = "https://raw.githubusercontent.com/IshaanOhri/Visle/master/Assets/img/Logo.png">
+</p>
 
-## Moto : "When you learn, you visualize, when you visualize, you remember!"
+<p align="center">
+ <img height="100" src = "https://raw.githubusercontent.com/IshaanOhri/Visle/master/Assets/img/Quote.png">
+</p>
 
 # Inspiration
 Researchers say visual memory is 60,000X times powerful than text/auditory memory and something which is grasped visually remains in our mind for very long time. Our current education system has become outdated and methodological, where teachers prepare their non-interactive lessons and present them in a lecturing and boring fashion. Inspired by the power of visual learning we wanted to create a tool that could converts teacher's lessons into easy to grasp Cliparts as the teacher speaks dynamically, to provide most immersive, engaging and visually enhanced learning experience to students. Hence, we created Visle, a visual learning tool.
@@ -85,7 +89,7 @@ The next challenge was to make use of web sockets extensively in variety of tech
 <br>
 
 <p align="center">
- <img src = "https://raw.githubusercontent.com/IshaanOhri/Visle/master/Assets/img/workflow.svg">
+ <img src = "https://raw.githubusercontent.com/IshaanOhri/Visle/master/Assets/img/workflow.png">
 </p>
 
 <br>

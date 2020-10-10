@@ -33,10 +33,10 @@ Rest API - build with nodejs, typescript, mongodb, websockets, it is the heart o
 
 # Challenges we ran into
 Our main challenge was to design a generative neural network with following features
- -  generate images suitable for illustration and teaching 
- - generate images for a synonymous words for a rich visual experience 
- -  generate them rapidly for making it work in real-time 
- -  4 to make images appropriate to display it to children
+ -  Generate images suitable for illustration and teaching 
+ -  Generate images for a synonymous words for a rich visual experience 
+ -  Generate them rapidly for making it work in real-time 
+ -  To make images appropriate to display it to children
 
 The next challenge was to make use of web sockets extensively in variety of tech stacks to make the whole thing work in real-time. Using sockets at such a degree also created a problem of securing them and their coonnection channels.
 
@@ -62,12 +62,12 @@ We want Visle to be easy to use and want it integrate in classrooms, online clas
 
 
 <p align="center">
- <img src = "/Assets/img/remote.png">
+ <img src = "https://raw.githubusercontent.com/IshaanOhri/Visle/master/Assets/img/remote.png">
 </p>
 <br>
 <br>
 <p align="center">
- <img src = "/Assets/img/classroom.png">
+ <img src = "https://raw.githubusercontent.com/IshaanOhri/Visle/master/Assets/img/classroom.png">
 </p>
 
                 
@@ -80,7 +80,7 @@ We want Visle to be easy to use and want it integrate in classrooms, online clas
 <br>
 
 <p align="center">
- <img src = "/Assets/img/GAN.png">
+ <img src = "https://raw.githubusercontent.com/IshaanOhri/Visle/master/Assets/img/GAN.png">
 </p>
 
 <br>
@@ -88,7 +88,7 @@ We want Visle to be easy to use and want it integrate in classrooms, online clas
 <br>
 
 <p align="center">
- <img src = "/Assets/img/workflow.svg">
+ <img src = "https://raw.githubusercontent.com/IshaanOhri/Visle/master/Assets/img/workflow.svg">
 </p>
 
 <br>
@@ -96,5 +96,5 @@ We want Visle to be easy to use and want it integrate in classrooms, online clas
 <br>
 
 <p align="center">
- <img src = "/Assets/img/techstack.svg">
+ <img src = "https://raw.githubusercontent.com/IshaanOhri/Visle/master/Assets/img/techstack.svg">
 </p>

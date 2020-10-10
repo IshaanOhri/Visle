@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+	<title>Visle</title>
+	<meta name="description"
+		content="Visle is a service build to make learning easy for autistic students. It takes in real time input from the teacher, and arranges it in a visual manner">
+
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="https://visle.ml">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Visle">
+	<meta property="og:description"
+		content="Visle is a service build to make learning easy for autistic students. It takes in real time input from the teacher, and arranges it in a visual manner">
+	<meta property="og:image" content="https://visle.ml/Visle.png">
+
+	<!-- Twitter Meta Tags -->
+	<meta property="twitter:url" content="https://visle.ml">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Visle">
+	<meta name="twitter:description"
+		content="Visle is a service build to make learning easy for autistic students. It takes in real time input from the teacher, and arranges it in a visual manner">
+	<meta name="twitter:image" content="https://visle.ml/Visle.png">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+		integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+		crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css" />
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="icon" type="image/png" href="https://visle.ml/favicon.png" />
+</head>
+
+<body id="body">
+	{{!-- {{> _profile}} --}}
+	<div class="container">
+		{{{body}}}
+	</div>
+</body>
+<script>
+	const img = document.querySelector("img");
+	img.onclick = function () {
+		this.classList.toggle("active");
+	}
+</script>
+
+</html>

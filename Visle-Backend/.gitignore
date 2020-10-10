@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+bin
+/src/config/dev.env
+newrelic_agent.log
+/src/logger/logs.log
+/production/file.env

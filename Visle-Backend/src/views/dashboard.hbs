@@ -1,0 +1,26 @@
+<h2 id="name" style="font-family: 'Pacifico', cursive;" align="center">Welcome!</h2>
+<div class="container login-container">
+	<div class="card">
+		<div class="card-content">
+			<h5>Enter the Session ID</h5>
+			<br>
+			<input type="text" placeholder="ABC123" style="text-transform: uppercase;" id="session-id" maxlength="6"
+				onkeypress="return isNumberKey(event)" required>
+			<br><br>
+			<a href="/channel/join?channelID=document.getElementById('session-id').value&participantID={{participantID}}"
+				onclick="this.href='/channel/join?channelID=' + document.getElementById('session-id').value + '&participantID=' + {{participantID}}"><button
+					id="join-button">Join</button></a>
+		</div>
+	</div>
+</div>
+<div id="profile-body">
+	<div id="profile-container">
+		<div id="profile-wrapper">
+			<a href="#">
+				<img id="profile-image" src="{{image}}" alt="src/public/favicon.png">
+			</a>
+			<div id="profile-title">{{name}}</div>
+		</div>
+		<br>
+		<a href="/auth/logout"><button id="logout-button">Logout</button></a>
+	</div>

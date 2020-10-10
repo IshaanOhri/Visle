@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+	<title>Pusher Test</title>
+	<script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+	<script>
+		// Enable pusher logging - don't include this in production
+		Pusher.logToConsole = true;
+
+		var pusher = new Pusher('0b4f958b72ea1f9abde2', {
+			cluster: 'ap2'
+		});
+
+		var channel = pusher.subscribe('presence-2PCUC1');
+		// console.log(channel);
+		channel.bind('my-event', function (data) {
+			alert(JSON.stringify(data.message));
+		});
+
+		channel.bind('pusher:member_added', function (member) {
+			// for example:
+			console.log('NEW MEMBER', member.id);
+		});
+
+		channel.bind('pusher:member_removed', function (member) {
+			// for example:
+			console.log('REMOVED MEMBER', member.id);
+		});
+
+		channel.bind('pusher:subscription_succeeded', function (members) {
+			// for example
+			console.log(members.count);
+
+			members.each(function (member) {
+				// for example:
+				console.log(member.id, member.info);
+			});
+		});
+		console.log('NUMBER: ', channel.members.count);
+		console.log('CHANNEL: ', channel);
+	</script>
+</head>
+<body>
+	<h1>Pusher Test</h1>
+	<p>Try publishing an event to channel <code>my-channel</code> with event name <code>my-event</code>.</p>
+</body>

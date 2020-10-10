@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+	<title>Visle</title>
+	<meta name="description"
+		content="Visle is a service build to make learning easy for autistic students. It takes in real time input from the teacher, and arranges it in a visual manner">
+
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="https://visle.ml">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Visle">
+	<meta property="og:description"
+		content="Visle is a service build to make learning easy for autistic students. It takes in real time input from the teacher, and arranges it in a visual manner">
+	<meta property="og:image" content="https://visle.ml/Visle.png">
+
+	<!-- Twitter Meta Tags -->
+	<meta property="twitter:url" content="https://visle.ml">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Visle">
+	<meta name="twitter:description"
+		content="Visle is a service build to make learning easy for autistic students. It takes in real time input from the teacher, and arranges it in a visual manner">
+	<meta name="twitter:image" content="https://visle.ml/Visle.png">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+		integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+		crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css" />
+	<script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+	<link rel="icon" type="image/png" href="https://visle.ml/favicon.png" />
+</head>
+
+<body id="body" style="background: rgb(248, 242, 223);">
+	<div class="container">
+		{{{body}}}
+	</div>
+</body>
+<script>
+	Pusher.logToConsole = false;
+
+	var pusher = new Pusher('0b4f958b72ea1f9abde2', {
+		cluster: 'ap2'
+	});
+
+	var img1 = document.getElementById('img1');
+	var img2 = document.getElementById('img2');
+	var img3 = document.getElementById('img3');
+	var img4 = document.getElementById('img4');
+	var img5 = document.getElementById('img5');
+	var img6 = document.getElementById('img6');
+
+	var audio = document.getElementById('audio');
+	var source1 = document.getElementById('source1');
+	var source2 = document.getElementById('source2');
+
+	var channel = pusher.subscribe(`presence-{{ sessionID }}`);
+	// console.log(channel);
+	channel.bind('my-event', function (data) {
+
+		img1.src = "https://i1.wp.com/hubbravissimo.com/wp-content/uploads/2019/07/fff16-862c4e_80c174747b704e778f110260a995cc97mv2.gif?fit=800%2C800&ssl=1&w=640"
+		img2.src = "https://i1.wp.com/hubbravissimo.com/wp-content/uploads/2019/07/fff16-862c4e_80c174747b704e778f110260a995cc97mv2.gif?fit=800%2C800&ssl=1&w=640"
+		img3.src = "https://i1.wp.com/hubbravissimo.com/wp-content/uploads/2019/07/fff16-862c4e_80c174747b704e778f110260a995cc97mv2.gif?fit=800%2C800&ssl=1&w=640"
+		img4.src = "https://i1.wp.com/hubbravissimo.com/wp-content/uploads/2019/07/fff16-862c4e_80c174747b704e778f110260a995cc97mv2.gif?fit=800%2C800&ssl=1&w=640"
+		img5.src = "https://i1.wp.com/hubbravissimo.com/wp-content/uploads/2019/07/fff16-862c4e_80c174747b704e778f110260a995cc97mv2.gif?fit=800%2C800&ssl=1&w=640"
+		img6.src = "https://i1.wp.com/hubbravissimo.com/wp-content/uploads/2019/07/fff16-862c4e_80c174747b704e778f110260a995cc97mv2.gif?fit=800%2C800&ssl=1&w=640"
+
+		const query = data.message.query;
+		const urls = data.message.urls;
+
+		document.getElementById("query").innerHTML = "";
+
+		var i = 0;
+		var speed = 100;
+
+		typeWriter();
+
+		function typeWriter() {
+			if (i < query.length) {
+				document.getElementById("query").innerHTML += query.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+			}
+		}
+
+		img1.src = urls[0];
+		img2.src = urls[1];
+		img3.src = urls[2];
+		img4.src = urls[3];
+		img5.src = urls[4];
+		img6.src = urls[5];
+	});
+
+	const members = [];
+
+	channel.bind('pusher:member_added', function (member) {
+		members.push(member.info)
+
+		document.getElementById('participants-count').innerHTML = `Participants (${channel.members.count})`;
+
+		var user = document.createElement('table');
+		var tr = document.createElement('tr');
+		var th1 = document.createElement('th');
+		var th2 = document.createElement('th');
+
+		var img = document.createElement('img')
+		img.src = member.info.image;
+
+		img.style.width = '30px';
+		img.style.height = '30px';
+
+		img.style.borderTopLeftRadius = '50% 50%';
+		img.style.borderTopRightRadius = '50% 50%';
+		img.style.borderBottomLeftRadius = '50% 50%';
+		img.style.borderBottomRightRadius = '50% 50%';
+
+		th2.style.textAlign = 'left';
+		th1.style.textAlign = 'right';
+		th1.style.width = '30px';
+		user.style.width = '70%';
+		user.style.margin = '0';
+		user.style.position = 'relative';
+		user.style.left = '15%';
+
+		th1.style.border = "0px"
+		th2.style.border = "0px"
+		tr.style.border = "0px"
+		user.style.border = "0px"
+
+		th1.appendChild(img);
+
+		th2.innerHTML = member.info.name;
+
+		th1.style.border = "0px"
+		th2.style.border = "0px"
+		tr.style.border = "0px"
+		user.style.border = "0px"
+
+		tr.appendChild(th1)
+		tr.appendChild(th2)
+		user.appendChild(tr)
+		user.id = member.id
+		document.getElementById("participants").appendChild(user);
+	});
+
+	channel.bind('pusher:member_removed', function (member) {
+
+		document.getElementById('participants-count').innerHTML = `Participants (${channel.members.count})`;
+
+		fetch(`http://localhost:3000/channel/remove?channelID={{sessionID}}&participantID=${member.id}`)
+			.then(function (response) {
+				return response.text();
+			}).then(function (html) {
+				console.log(html);
+			}).catch(function (err) {
+				console.warn('Something went wrong.', err);
+			});
+
+		const index = members.indexOf(member.info);
+		if (index > -1) {
+			members.splice(index, 1);
+		}
+		var user = document.getElementById(member.id);
+		document.getElementById('participants').removeChild(user);
+	});
+
+	channel.bind('pusher:subscription_succeeded', function (oldMembers) {
+
+		document.getElementById('participants-count').innerHTML = `Participants (${channel.members.count})`;
+
+		oldMembers.each(function (member) {
+			members.push(member.info)
+
+			var user = document.createElement('table');
+			var tr = document.createElement('tr');
+			var th1 = document.createElement('th');
+			var th2 = document.createElement('th');
+
+			var img = document.createElement('img')
+			img.src = member.info.image;
+
+			img.style.width = '30px';
+			img.style.height = '30px';
+
+			img.style.borderTopLeftRadius = '50% 50%';
+			img.style.borderTopRightRadius = '50% 50%';
+			img.style.borderBottomLeftRadius = '50% 50%';
+			img.style.borderBottomRightRadius = '50% 50%';
+
+			th1.appendChild(img);
+
+			th2.innerHTML = member.info.name;
+
+			th2.style.textAlign = 'left';
+			th1.style.textAlign = 'right';
+			th1.style.width = '30px';
+			user.style.width = '70%';
+			user.style.margin = '0';
+			user.style.position = 'relative';
+			user.style.left = '15%';
+
+			th1.style.border = "0px"
+			th2.style.border = "0px"
+			tr.style.border = "0px"
+			user.style.border = "0px"
+
+			tr.appendChild(th1)
+			tr.appendChild(th2)
+			user.appendChild(tr)
+			user.id = member.id
+			document.getElementById("participants").appendChild(user);
+		});
+	})
+
+</script>
+
+</html>

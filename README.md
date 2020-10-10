@@ -16,9 +16,9 @@ Researchers say visual memory is 60,000x times powerful than text/auditory memor
 <h2 align="center">What is Visle?</h2>
 <br>
 
-```
-Mr Lal is a primary class English teacher. One day he was teaching his students about different kind of birds. He started with the king of birds, Kingfisher🦆 and the conversation went like
 
+Mr Lal is a primary class English teacher. One day he was teaching his students about different kind of birds. He started with the king of birds, Kingfisher🦆 and the conversation went like
+```
 Mr Lal: "Oncle lived a beautiful kingfisher on a big green tree..."
 
 Hearing this a lot of students raised questions and asked
@@ -36,13 +36,13 @@ Visle, formed by the words visual-learning, is a tech-based learning tool that c
 
 Our project has three main elements
 
-Mobile app - build with native android sdk and java, it listens to what teacher says and convert their speech to text with Google speech-2-text engine and dispatches it to our api.
+**Mobile app** - build with native android sdk and java, it listens to what teacher says and convert their speech to text with Google speech-2-text engine and dispatches it to our api.
 
-Image generator - build with pytorch and flask, helps to create magical Clipart of multiple resolutions from the given text and upload these generated images to cloud storage for easy retrieval.
+**Image generator** - build with pytorch and flask, helps to create magical Clipart of multiple resolutions from the given text and upload these generated images to cloud storage for easy retrieval.
 
-Clipart board - designed with html/css/js and websockets, it facilitate the display of generated images in real-time.
+**Clipart board** - designed with html/css/js and websockets, it facilitate the display of generated images in real-time.
 
-Rest API - build with nodejs, typescript, mongodb, websockets, it is the heart of the whole system as it connect all other components and synchronize them to work in real-time. It recieves text from the app, send it to image generator for magic to happen, retrieves the generated image from storage and send them to clipart board through a websocket.
+**Rest API** - build with nodejs, typescript, mongodb, websockets, it is the heart of the whole system as it connect all other components and synchronize them to work in real-time. It recieves text from the app, send it to image generator for magic to happen, retrieves the generated image from storage and send them to clipart board through a websocket.
 
 <br>
 <h2 align="center">Challenges we ran into</h2>

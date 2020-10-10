@@ -18,7 +18,7 @@ Student2: "Sir, did it have big wings?"
 ```
 Hearing these questions, Mr Lal decided to take help of our visual assistant Visle. As he started teaching again, our tool listened to Mr lal and created cliparts having a beautiful kingfisher, a green tree and a big jungle in the background.
 
-Visle, formed by the words visual-learning, is a tech-based learning tool that converts teacher's speech into Clipart pictures in real-time to provide young minds an enhanced and graphic rich learning experience. Visle does this with help of Generative Neural Network(Generative adversarial network).
+Visle, formed by the words visual-learning, is a tech-based learning tool that converts teacher's speech into Clipart pictures in real-time to provide young minds an enhanced and graphic rich learning experience. Visle does this with help of GANs(Generative adversarial network).
 
 # How we build it
 Our project has three main elements

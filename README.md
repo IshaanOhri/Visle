@@ -61,7 +61,6 @@ The next challenge was to make use of web sockets extensively in variety of tech
 <br>
 
  - Understanding and using GANs to generate Images.
- - Achieving an accuracy of **87.621%** with our generative neural network.
  - Understanding the use channels, websockets for building a real-time applications
  - Using publish-subscrible system design for asynchronous messaging b/w various services
  - serverless archicture for system maintanence and scaling.

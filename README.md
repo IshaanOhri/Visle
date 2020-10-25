@@ -124,6 +124,3 @@ We want Visle to be easy to use and want it integrate in classrooms, online clas
 
 <br>
 <br>
-
-## For a live-demo drop a mail at
-ishaan99ohri@gmail.com
